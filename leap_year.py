@@ -12,7 +12,7 @@ def days_in_month(year, month):
   """Return number of days in that month in that year."""
   
   if not 1 <= month <= 12:
-    return 'Invalid MOnth'
+    return 'Invalid Month'
   
   if month == 2 and is_leap(year):
     return 29
