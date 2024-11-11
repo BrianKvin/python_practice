@@ -14,7 +14,7 @@ This is my Python Projects and Coding Challenges repository! This repo contains 
   - [Flask Projects](#flask-projects) -->
   <!-- - [Data Science Projects](#data-science-projects) -->
 
-- [Installation](#installation) -->
+<!-- - [Installation](#installation) --> -->
 
 <!-- ## Introduction
 
