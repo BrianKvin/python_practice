@@ -20,3 +20,4 @@ def days_in_month(year, month):
   return month_days[month]
 
 #print(days_in_month(2023, 2))
+print(is_leap(2018))
