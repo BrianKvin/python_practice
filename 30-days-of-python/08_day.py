@@ -15,7 +15,7 @@ print(dct['key1']) # value1
 print(dct['key4']) # value4
 
 '''
-ccessing an item by key name raises an error if the key does not exist. To avoid this error first we have to check if a key exist or we can use the get method. The get method returns None, which is a NoneType object data type, if the key does not exist.
+Accessing an item by key name raises an error if the key does not exist. To avoid this error first we have to check if a key exist or we can use the get method. The get method returns None, which is a NoneType object data type, if the key does not exist.
 '''
 person = {
     'first_name':'Asabeneh',
