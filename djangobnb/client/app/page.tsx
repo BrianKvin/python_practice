@@ -1,9 +1,9 @@
+import Categories from "./components/Categories";
 
 export default function Home() {
   return (
-    <main className="">
-    DjangoBnB
-    <h2 className="">Django and next rules</h2>
+    <main className="max-w[1500px] mx-auto px-6">
+      <Categories />
     </main>
   );
 }
