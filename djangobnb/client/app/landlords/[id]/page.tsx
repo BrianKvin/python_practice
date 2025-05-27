@@ -6,7 +6,7 @@ import React from 'react'
 const LandloardDetailsPage = () => {
   return (
     <main className="max-w-[1500px] mx-auto px-6 pb-6">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-start">
         <aside className="col-span-1 mb-4">
           <div className="flex flex-col items-center p-6 rounded-xl border border-gray-300 shadow-xl">
             <Image 
