@@ -1,0 +1,34 @@
+sudo docker-compose exec web rm -rf djangobnb_backend/useraccount/migrations
+
+# Rebuild the Docker containers with the new dependencies
+sudo docker-compose build
+
+# Then bring the containers up
+sudo docker-compose up -d
+
+# Finally, try running the migrations again
+sudo docker-compose exec web python3 manage.py makemigrations
+
+# Stop any running containers
+sudo docker-compose down
+
+# Remove the database volume to start fresh
+sudo docker volume ls
+sudo docker volume rm $(sudo docker volume ls -q | grep djangobnb)
+
+# Remove all migration files except __init__.py
+find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+find . -path "*/migrations/*.pyc" -delete
+
+# Rebuild and start the containers
+sudo docker-compose up -d --build
+
+# Create and apply migrations
+sudo docker-compose exec web python manage.py makemigrations
+sudo docker-compose exec web python manage.py migrate
+
+# Create a superuser (optional)
+sudo docker-compose exec web python manage.py createsuperuser
+
+# flush the database
+django-admin sqlflush
