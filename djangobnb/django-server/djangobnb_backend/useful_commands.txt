@@ -32,3 +32,6 @@ sudo docker-compose exec web python manage.py createsuperuser
 
 # flush the database
 django-admin sqlflush
+
+# start app
+sudo docker-compose exec web python3 manage.py startapp property
