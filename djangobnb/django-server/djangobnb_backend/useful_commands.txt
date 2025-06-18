@@ -35,3 +35,6 @@ django-admin sqlflush
 
 # start app
 sudo docker-compose exec web python3 manage.py startapp property
+
+# cannot write files solution
+sudo chown -R $USER:$USER /home/bk/Programming/python_practice/djangobnb/django-server/
