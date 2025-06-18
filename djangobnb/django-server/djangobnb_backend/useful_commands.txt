@@ -38,3 +38,9 @@ sudo docker-compose exec web python3 manage.py startapp property
 
 # cannot write files solution
 sudo chown -R $USER:$USER /home/bk/Programming/python_practice/djangobnb/django-server/
+
+# create superuser in docker
+docker exec -it <container_name_or_id> python manage.py createsuperuser
+
+# check containers
+docker ps
