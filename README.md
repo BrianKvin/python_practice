@@ -4,8 +4,6 @@
 
 This is my Python Projects and Coding Challenges repository! This repo contains a variety of Python-related projects, from beginner-level challenges to advanced applications, including work in **Python**, **Django**, and **Flask**.
 
-<<<<<<< HEAD
-=======
 <!-- ## Table of Contents
 
 - [Introduction](#introduction)
@@ -80,7 +78,6 @@ This section includes projects related to data science, from data manipulation t
 - **Customer Segmentation**: K-means clustering to segment customers based on purchasing behavior.
 
 These projects can be found in the `data-science-projects/` folder. -->
->>>>>>> 456395e (Modified README.md)
 
 ## Installation
 
